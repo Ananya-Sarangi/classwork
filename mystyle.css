@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.scroll_container {
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: rgb(234, 220, 193); /* Change to your desired background color */
+}
+
+.right {
+  background-color: rgb(196, 235, 237); /* Change to your desired background color */
+}
+
+.images img {
+  width: 60%;
+  display: block;
+  margin: 60px auto 0px;
+}
+
+.scroll_container h2 {
+  text-align: center; 
+  margin: 30px auto 0px; 
+}
