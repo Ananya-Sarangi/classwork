@@ -10,18 +10,22 @@
   box-sizing: border-box;
 }
 
+
+
 .left {
-  background-color: rgb(234, 220, 193); /* Change to your desired background color */
+  background-color: rgb(255, 255, 255); /* Change to your desired background color */
 }
 
 .right {
-  background-color: rgb(196, 235, 237); /* Change to your desired background color */
+  background-color: rgb(255, 255, 255); /* Change to your desired background color */
 }
 
+
+
 .images img {
-  width: 60%;
+  width: 80%;
   display: block;
-  margin: 60px auto 0px;
+  margin: 40px auto 0px;
 }
 
 .scroll_container h2 {
