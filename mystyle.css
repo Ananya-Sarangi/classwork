@@ -11,17 +11,16 @@
 }
 
 
-
 .left {
-  background-color: rgb(241, 231, 215); /* Change to your desired background color */
+  background-color: rgb(241, 231, 215); 
 }
 
 .right {
-  background-color: rgb(224, 240, 244); /* Change to your desired background color */
+  background-color: rgb(224, 240, 244); 
 }
 
 
-.images img {
+img {
   width: 80%;
   display: block;
   margin: 40px auto 0px;
