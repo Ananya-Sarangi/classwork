@@ -24,6 +24,7 @@ section:nth-of-type(2) p:not(:first-child) {
     text-indent: 40px; 
 }
 
+
 * {
     font-size: 16px;
 }
