@@ -1,0 +1,210 @@
+/* Your CSS goes here --------------------- */
+
+
+#output-canvas {
+    width: 500px;
+    height: 500px;
+    border-radius: 4px;
+    background-color: lightgrey;
+    position: relative;
+    box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.2),
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    
+}
+
+#input {
+    width: 20%;
+    min-height: 100%;
+    background-color: #161819;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Helvetica, sans-serif;
+    color:rgb(255, 255, 255);
+  }
+  #input::-webkit-scrollbar {
+    width: 16px; 
+
+}
+
+#input::-webkit-scrollbar-track {
+    background: #292B2D;
+}
+
+#input::-webkit-scrollbar-thumb {
+    background-color: #e7e7e7; 
+    border-radius: 8px; 
+    
+}
+
+
+
+  #output {
+    width: 80%;
+    min-height: 100%;
+    background-color: #292B2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #292B2D, #1c1b1e); 
+  }
+#text-1, #text-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    word-wrap: break-word;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+
+
+#first, #second {
+    padding-bottom: 8px;
+}
+
+#a,#b,#c,#d,#e, #f {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    
+}
+#colourheader, #weightheading {
+    padding-bottom: 4px;
+}
+
+#sizeSlider1, #sizeSlider2, #weight, #toptext, #bottomtext {
+    width: 100%;
+}
+
+#sizeSlider1 {
+   accent-color:#8C56FF;
+   cursor: pointer; 
+    
+}
+#sizeSlider2 {
+    accent-color: #8C56FF;
+    cursor: pointer; 
+}
+
+#sizeSlider1.thumb , #sizeSlider2.thumb {
+    cursor: pointer; 
+    
+}
+
+
+#toptext, #bottomtext {
+    background-color: #292B2D;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 0px;
+    height: 30px;
+    box-shadow: inset 0 0 6px #00000017;
+    padding-left: 10px;
+}
+#imageChange {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+#dropdown {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;   
+    background-color: #292B2D;
+    color: rgb(255, 255, 255); 
+
+}
+
+#dropdown option:hover {
+    color: #8C56FF; 
+}
+
+
+
+#colorchange {
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-top: 8px;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;  
+    background-color: #292B2D;
+    color: rgb(255, 255, 255); 
+     
+}
+
+#weight {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    height: 30px;
+    background-color: #292B2D;
+    color: rgb(255, 255, 255);
+}
+
+#radio-item-1, #radio-item-2, #radio-item-3 {
+    margin-top: 12px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+
+
+
+  
+  input[type="radio"]:checked {
+    border-color: #ffffff;
+    background-color: #8C56FF;
+  }
+  
+
+  
+  input[type="radio"]:checked + label {
+    color: #8C56FF;
+  }
+  
+  #save-img {
+    background-color: #292B2D;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #292B2D;
+    color: #ffffff;
+    height: 40px;
+  }
+
+  h1 {
+    align-self: center;
+  }
+  
+  #openPopup {
+    width:30px;
+    height:30px;
+    align-self: auto;
+  }
+
+  #popup {
+    width: 400px;
+    height:150px;
+  }
+  
+
+
