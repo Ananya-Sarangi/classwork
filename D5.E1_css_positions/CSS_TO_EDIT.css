@@ -1,0 +1,231 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). Some properties have already been declared */
+@font-face {
+  font-family: "FoundersGrotesque-Regular";
+  src: url("FoundersGrotesk-Regular.woff");
+  src: url("FoundersGrotesk-Regular.woff2");
+}
+
+div{
+  font-family:"FoundersGrotesque-Regular";
+
+}
+body {
+  padding: 40px 10%;
+  background-color: rgb(235, 235, 235) ;  
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+section > h2 {
+text-align: center;
+line-height: 1;
+border-bottom: 1px solid black;
+padding-bottom: 8px;
+}
+
+section > em {
+display: block;
+margin: 8px 0;
+text-align: center;
+}
+
+section > div {
+  margin: 10px;
+  }
+
+#s1 > div {background-color: yellow;}
+#s2 > div {background-color: #CDEAC0;}
+#s3 > div {background-color: #FFFAE3;}
+#s4 > div {background-color: #FF5964;}
+#s5 > div {background-color: #B8F3FF;}
+#s6 > div {background-color: #B298DC;}
+#s7 > div {background-color: #BDC696;}
+
+
+
+/* SECTION 1 */
+/* ----------------------------------------------------- */
+
+#s1 span {
+  background-color: yellow;
+  mix-blend-mode: difference;
+  margin-bottom: 2px;
+  height: 30px;
+}
+
+
+#s1 div:nth-of-type(1) span {
+  display:inline;
+}
+#s1 div:nth-of-type(2) span {
+  display:inline-block;
+}
+
+#s1 div:nth-of-type(3) span{
+  display:block;
+}
+#s1 div:nth-of-type(4) span{
+  display:block;
+  text-align: center;
+  height: auto;
+
+}
+
+
+
+
+
+
+/* SECTION 2 */
+/* ----------------------------------------------------- */
+
+
+#s2 > div > span {
+background-color: #CDEAC0;
+mix-blend-mode: difference; 
+}
+
+#s2 > div {
+  display: inline-block;
+}
+
+#s2 div:nth-of-type(2) {
+  width: 600px;
+}
+#s2 div:nth-of-type(3) {
+  width: 600px;
+  display: block;
+  margin: auto;
+
+}
+
+#s2 div:nth-of-type(4) {
+  width: 100%;
+}
+#s2 div:nth-of-type(5) {
+  width: 100vh;
+}
+#s2 div:nth-of-type(6),#s2 div:nth-of-type(7), #s2 div:nth-of-type(8), #s2 div:nth-of-type(9) {
+  width: 47%;
+}
+
+#s2 div:nth-of-type(6) > span {
+  width: 50%;
+  
+}
+
+#s2 div:nth-of-type(7) > span, #s2 div:nth-of-type(8) > span, #s2 div:nth-of-type(9) > span {
+  width: 50vw;
+  display: block;
+}
+
+#s2 div:nth-of-type(8) {
+  overflow: hidden;
+}
+#s2 div:nth-of-type(9) {
+  overflow: auto;
+}
+
+
+
+
+/* SECTION 3 */
+/* ----------------------------------------------------- */
+
+#s3 {
+font-size: 24px;
+}
+#s3 div:nth-of-type(2) {
+  font-size: 15px;
+}
+#s3 div:nth-of-type(3) {
+  font-size: 1.5vh;
+}
+#s3 div:nth-of-type(4) {
+  font-size: 1em;
+}
+#s3 div:nth-of-type(5) {
+  font-size: 1rem;
+}
+
+
+/* SECTION 4 */
+/* ----------------------------------------------------- */
+
+#s4 > div {
+  width: 50%;
+  margin: auto;
+}
+
+#s4 div:nth-last-of-type(2) {
+  margin-right: 0;
+}
+#s4 > div > h3 {
+  position: sticky;
+  top:1rem;
+
+}
+
+#s4 div:nth-of-type(2) > h3 {
+  top:0;
+  background-color: #B8F3FF;
+}
+
+
+/* SECTION 5 */
+/* ----------------------------------------------------- */
+
+#s5 > div {
+  width: 20%;
+  position: static;
+}
+#s5 div:nth-of-type(2){
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+}
+#s5 div:nth-of-type(3){
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+
+/* SECTION 6 */
+/* ----------------------------------------------------- */
+
+#s6 > div:nth-of-type(3) {
+  mix-blend-mode: difference;
+  position: absolute;
+  left: -40px
+}
+#s6 {
+  position: relative;
+}
+#s6 > div{
+  width: 50%;
+}
+#s6 div:nth-of-type(2){
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  width: 20%;
+}
+
+
+/* SECTION 7 */
+/* ----------------------------------------------------- */
+
+#s7 div:nth-of-type(2){
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
