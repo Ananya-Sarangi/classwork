@@ -62,6 +62,21 @@ function chooseColor() {
     text2.style.color = selectedColor;
 }
 
+function chooseStroke() {
+  const selectElement = document.getElementById("strokecolor");
+  const text1 = document.getElementById("text-1");
+  const text2 = document.getElementById("text-2");
+  const selectedColor = selectElement.value;
+
+  text1.style.webkitTextStrokeColor = selectedColor;
+  text2.style.webkitTextStrokeColor = selectedColor;
+}
+
+
+
+
+
+
 
 
 

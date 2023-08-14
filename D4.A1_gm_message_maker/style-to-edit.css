@@ -71,6 +71,13 @@
     padding-bottom: 15px;
     
 }
+
+#g {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+
 #colourheader, #weightheading {
     padding-bottom: 4px;
 }
@@ -204,6 +211,17 @@ input[type="radio"] {
   #popup {
     width: 400px;
     height:150px;
+  }
+  #strokecolor {
+    background-color: #292B2D;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 0px;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom:15px;
   }
   
 
