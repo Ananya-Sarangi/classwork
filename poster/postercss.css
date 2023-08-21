@@ -1,0 +1,287 @@
+body {
+    background-color: #FDFDFD;
+}
+
+#header {
+    height:96px;
+    border-bottom: 4px solid #413A86;
+    border-top: 4px solid #413A86;
+    border-left: 14px solid #413A86;
+    border-right: 14px solid #413A86;
+    margin-bottom: -4px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction:row;
+    background-color: #FAB54B;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+}
+
+#headright {
+    height: 100%;
+    width: calc(100% - 90%);
+    background-color: #FDFDFD;
+}
+#stickcont {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100px;
+    background-color: #FDFDFD;
+}
+#sticker {
+    object-fit: cover;
+    width:95%;
+    height: 95%;
+}
+#headleft {
+    height: 96px;
+    width: 16%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0% 80%);
+    border-radius: 93% 7% 100% 0% / 0% 19% 81% 100%;
+    background-color: #FDFDFD;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 20px;
+    
+}
+
+.title {
+    font-family: Impact, sans-serif; /* Use Helvetica if available, otherwise Arial or a generic sans-serif font */
+    font-weight:normal; /* Make the text bold */
+    font-stretch: ultra-condensed; /* Condense the font */
+    font-size: 20px; /* Set the desired font size */
+    color: #413A86; /* Set your desired color for the title */
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 100px;
+    padding-top: 50%;
+    width: 100%;
+    
+}
+
+.code {
+    font-family: Impact, sans-serif; /* Use Helvetica if available, otherwise Arial or a generic sans-serif font */
+    font-weight: medium; /* Make the text bold */
+    font-size: 22px; /* Set the desired font size */
+    color: #aa2727; /* Set your desired color for the code */
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 250px;
+    display: inline-block;
+
+  
+    width: 100%;
+
+}
+
+#headcent {
+    height: 100%;
+    width: 70%;
+    background-color: #FAB54B;
+    text-align: center;
+}
+
+.title1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #413A86;
+    text-transform: uppercase;
+    margin-left: auto; /* Move the text within the div to the right */
+    display: block; /* Ensure the margin works as expected */
+    margin-top: 10px;
+    
+}
+
+.code1 {
+    font-family: Helvetica, Arial, sans-serif; /* Use Helvetica if available, otherwise Arial or a generic sans-serif font */
+    font-weight: 800; /* Make the text bold */
+    font-size: 30px; /* Set the desired font size */
+    color: #413A86; /* Set your desired color for the code */
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 30px;
+    display: inline-block;
+    width: 100%;}
+   
+
+#footer {
+    width: 100%;
+    color: #1d1c1a;
+    font-family:Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+#barimg {
+    height: 95%;
+    right: 0;
+}
+#mainarea {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+.bigbox {
+    width: calc(33.33% - 11px);
+    aspect-ratio: 1.75/1;
+    border: 8px solid #413A86;
+    margin-bottom: -8px;
+    border-radius: 44px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+.bigbox:nth-of-type(3),.bigbox:nth-of-type(6),.bigbox:nth-of-type(9) {
+    margin-left: -4px;
+}
+.bigbox:nth-of-type(1),.bigbox:nth-of-type(4),.bigbox:nth-of-type(7) {
+    margin-right: -4px;
+
+}
+.bigbox:nth-of-type(2),.bigbox:nth-of-type(5),.bigbox:nth-of-type(8), .bigbox:nth-of-type(10) {
+    margin-right: -4px;
+    margin-left: -4px;
+
+}
+.imgbox {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+}
+.leftbox {
+    background-color: #EDF6C9;
+    width:34%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.leftimg {
+    width: 80%;
+    align-items: center;
+}
+.leftimg:nth-of-type(1) {
+    width: 60%;
+    align-items: center;
+}
+
+.rightimg {
+    width: 80%;
+    align-items: center;
+}
+
+.rightbox {
+    background-color: #FDFDFD;
+    width:66%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.bottombox {
+    height: 10%;
+    width:100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    bottom: 0;
+
+}
+.botright {
+    font-family: Helvetica, sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    color: #1d1c1a;
+    width: 50%;
+    height: 100%;
+    padding-left:40px;
+    padding-top: 3px;
+    text-align: left;
+    background-color: #FDFDFD}
+    
+
+.botleft {
+    font-family: Helvetica, sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    color: #1d1c1a;
+    width: 50%;
+    height: 100%;
+    padding-right:40px;
+    padding-top: 3px;
+    text-align: right;
+    background-color: #FDFDFD}
+
+
+    @media screen and (max-width: 1024px) {
+        .bigbox {
+            width: calc(50% - 12px);
+            margin-right: -4px;
+            margin-left: -4px;
+        }
+        
+        .bigbox:nth-of-type(2n-1) {
+            margin-left: 0;
+        }
+    
+        .bigbox:nth-of-type(2n) {
+            margin-right: 0;
+        }
+
+        .title,
+        .code {
+        font-size: 17px;
+        }
+        
+        .title1,
+        .code1 {
+        font-size: 23px;
+        }
+
+    }
+    @media screen and (max-width: 600px) {
+        .bigbox {
+            width: calc(100% - 12px);
+            margin-right: -4px;
+            margin-left: -4px;
+        }
+
+        .title,
+        .code {
+        font-size: 15px;
+        }
+
+        .title1,
+        .code1 {
+        font-size: 20px;
+        }
+        
+
+ 
+    }
+    
+    
+    
+    
+
+    
+
+
+
+
