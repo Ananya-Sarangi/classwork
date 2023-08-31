@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Day3_Ex2.css">
+    <script type="text/javascript" src="Day3_Ex2.js" defer></script>
+    
+    
+</head>
+<body >
+    <div id="topbar">
+        <h1>Day 3 Exercise 2</h1>
+    </div>
+    <div class="flex-container">
+
+        <div class="scroll_container left">
+            <h2 id="heading"> 
+                French Toast Recipe
+            </h2>
+            <h3 id="subheading">
+                10 minutes prep time | 5 minutes cooking time
+            </h3>
+            <p id="paragraph">
+                Begin by whisking together eggs, milk, a touch of vanilla extract, and a pinch of cinnamon in a shallow bowl. Heat a non-stick skillet or griddle over medium heat and add a pat of butter to coat the surface. Dip slices of your favorite bread into the egg mixture, allowing them to soak for a few seconds on each side. Place the soaked bread onto the heated skillet and cook until golden brown on both sides, usually about 2-3 minutes per side. Once cooked, transfer the French toast to a plate and dust with powdered sugar. Serve warm with a drizzle of maple syrup, fresh berries, or a dollop of whipped cream for a delightful breakfast treat that's both comforting and satisfying.
+            </p>
+            <div id="adjustableDiv"></div>
+            <img id="main" src="" alt="selectedimage">
+            <br>
+            <p id="text-1">    
+            </p>
+            
+
+      
+        
+        </div>
+
+        <div class="scroll_container right">
+            <input type="text" id="inputbox" oninput="myInput()" placeholder="Enter">
+            <br>
+            <br>
+            <button id="toggleButton" onclick="toggleVisibility()">Toggle Visibility</button>
+            <br>
+            <br>
+
+            <form>
+                <input type="radio" id="Arial" name="fontSelector" value="Arial" onclick="changeFont('Arial')">
+                <label for="Arial">Arial</label>
+                <input type="radio" id="Times New Roman" name="fontSelector" value="Times New Roman" onclick="changeFont('Times New Roman')">
+                <label for="Times New Roman">Times New Roman</label>
+                <input type="radio" id="Tahoma" name="fontSelector" value="Tahoma" onclick="changeFont('Tahoma')">
+                <label for="Tahoma">Tahoma</label>
+            </form>
+
+            <br>
+            <input type="range" id="widthSlider" min="0" max="100" value="50" oninput="changeWidth()">
+            <br>
+            <br>
+            <input type="text" id="toptext" oninput="myInput1()">
+            <br>
+            <br>
+
+            <label for="imageSelect">Choose Image</label>
+            <select name="dropdown" id="imageSelect" onchange="chooseImage()">
+                <option value="">Select an Image</option>
+                <option value="https://images.unsplash.com/photo-1557925923-5dfbb22c50ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZyZW5jaCUyMHRvYXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60">Image 1</option>
+                <option value="https://images.unsplash.com/photo-1620921575487-22f017deecf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZyZW5jaCUyMHRvYXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60">Image 2</option>
+                <option value="https://plus.unsplash.com/premium_photo-1663840225558-03ac41c68873?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlbmNoJTIwdG9hc3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60">Image 3</option>
+
+            </select>
+
+
+            
+          
+        </div>
+
+        
+
+    
+    
+
+       
+</body>
+</html>

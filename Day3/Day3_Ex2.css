@@ -1,0 +1,37 @@
+#topbar {
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .scroll_container {
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+  }
+
+  .left {
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(241, 231, 215); 
+  }
+  
+  .right {
+    background-color: rgb(224, 240, 244); 
+  }
+
+#main{
+    margin: 20px auto 20px;
+    width:60%;
+}
+
+#adjustableDiv {
+    background-color: rgb(200, 121, 46);
+    height: 400px;
+    width: 400px;
+    border-radius: 8px;
+}
