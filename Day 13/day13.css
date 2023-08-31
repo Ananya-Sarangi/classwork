@@ -1,0 +1,122 @@
+html,body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Custom styles for pagination buttons */
+  .swiper-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet {
+      width: 13px;
+      height: 13px;
+      background-color: #ffffff7c;
+      opacity: 1 !important; 
+      border-radius: 50%;
+      margin: 0px 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: #1f6532; /* Active color */
+      width: 14px; /* Make it slightly bigger */
+      height: 14px; /* Make it slightly bigger */
+      animation: bounce 1s 2;
+      margin-top: 8px;
+
+   
+    
+  }
+
+  /* Animation for pagination buttons */
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1px); /* Reduced bounce height */
+    }
+}
+
+.bounce-animation {
+    animation: bounce 5s ease-out; /* Play the animation for 2 seconds */
+}
+
+.swiper-button-prev,
+    .swiper-button-next {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff7c;
+        color: #333;
+        border-radius: 50%;
+        font-size: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: #ffffff; /* Hover color */
+        transform: scale(1.1);
+    }
+
+
+
+
+
+
+      
