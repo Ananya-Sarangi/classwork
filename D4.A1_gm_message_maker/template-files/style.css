@@ -83,7 +83,7 @@ header {
   border-bottom: 0.5px solid black;
   display: flex;
   gap: 10px;
-  background-color: white;
+  background: linear-gradient(-225deg, rgb(77, 71, 193) 0%, rgb(113, 79, 199) 48%, rgb(153, 77, 233) 100%)!important;
   position: relative;
   z-index: 20;
 }
@@ -189,7 +189,7 @@ main  {
 }
 
 #save-img:hover {
-  background-color: lightgreen;
+  background: linear-gradient(-225deg, rgb(77, 71, 193) 0%, rgb(113, 79, 199) 48%, rgb(153, 77, 233) 100%)!important;
 }
 
 /* Text Styles ------------------------------------------------- */
