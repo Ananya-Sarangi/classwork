@@ -1,7 +1,9 @@
+
 body {
     background-color: #FDFDFD;
 }
 
+/* Header */
 #header {
     height:96px;
     border-bottom: 4px solid #413A86;
@@ -41,6 +43,7 @@ body {
     height: 96px;
     width: 16%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0% 80%);
+    /* border radius for curved shape in the header */
     border-radius: 93% 7% 100% 0% / 0% 19% 81% 100%;
     background-color: #FDFDFD;
     text-align: right;
@@ -50,11 +53,11 @@ body {
 }
 
 .title {
-    font-family: Impact, sans-serif; /* Use Helvetica if available, otherwise Arial or a generic sans-serif font */
-    font-weight:normal; /* Make the text bold */
-    font-stretch: ultra-condensed; /* Condense the font */
-    font-size: 20px; /* Set the desired font size */
-    color: #413A86; /* Set your desired color for the title */
+    font-family: Impact, sans-serif; 
+    font-weight:normal; 
+    font-stretch: ultra-condensed; 
+    font-size: 20px; 
+    color: #413A86; 
     text-transform: uppercase;
     text-align: right;
     margin-top: 100px;
@@ -118,16 +121,13 @@ body {
 }
 
 
-
-
-
-
-
-
 #barimg {
     height: 95%;
     right: 0;
 }
+
+
+/* main area - contains cards*/
 #mainarea {
     display: flex; 
     flex-direction: row;
@@ -135,7 +135,8 @@ body {
     justify-content: center;
     width: 100%;
   }
-  
+
+/* Card*/ 
 .bigbox {
     width: calc(33.33% - 11px);
     aspect-ratio: 1.75/1;
@@ -147,23 +148,33 @@ body {
     flex-direction: column;
 
 }
+
+/* Negative margin applied for cards to remove double border thickness*/
+
+/* negative margin for right column - only on left side*/ 
 .bigbox:nth-of-type(3),.bigbox:nth-of-type(6),.bigbox:nth-of-type(9) {
     margin-left: -4px;
 }
+/* negative margin for left column - only on right side*/ 
 .bigbox:nth-of-type(1),.bigbox:nth-of-type(4),.bigbox:nth-of-type(7) {
     margin-right: -4px;
 
 }
+/* negative margin for middle column - on both sides*/ 
 .bigbox:nth-of-type(2),.bigbox:nth-of-type(5),.bigbox:nth-of-type(8), .bigbox:nth-of-type(10) {
     margin-right: -4px;
     margin-left: -4px;
 
 }
+
+
+/* wrapper for images*/ 
 .imgbox {
     display: flex;
     flex-direction: row;
     height: 90%;
 }
+/* left image wrapper*/ 
 .leftbox {
     background-color: #EDF6C9;
     width:34%;
@@ -171,18 +182,13 @@ body {
     display: flex;
     justify-content: center;
 }
-
+ 
 .leftimg {
-    width: 65%;
+    width: 70%;
     align-items: center;
 }
 
-
-.rightimg {
-    width: 80%;
-    align-items: center;
-}
-
+/* right image wrapper*/
 .rightbox {
     background-color: #FDFDFD;
     width:66%;
@@ -190,6 +196,13 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.rightimg {
+    width: 80%;
+    align-items: center;
+}
+
+/* text div*/
 .bottombox {
     height: 10%;
     width:100%;
@@ -200,6 +213,8 @@ body {
     bottom: 0;
 
 }
+
+/* right -text div*/
 .botright {
     font-family: Helvetica, sans-serif;
     font-weight:600;
@@ -210,9 +225,13 @@ body {
     padding-left:40px;
     padding-top: 3px;
     text-align: left;
-    background-color: #FDFDFD}
-    
+    background-color: #FDFDFD;
+    word-wrap: break-word;
 
+
+}
+    
+/* left -text div*/
 .botleft {
     font-family: Helvetica, sans-serif;
     font-weight:600;
@@ -223,9 +242,18 @@ body {
     padding-right:40px;
     padding-top: 3px;
     text-align: right;
-    background-color: #FDFDFD}
+    background-color: #FDFDFD;
+    word-wrap: break-word;
 
 
+
+}
+
+
+
+    /* Responsive - breakpoints */
+
+    /* Breakpoint 1 */
     @media screen and (max-width: 1024px) {
         .bigbox {
             width: calc(50% - 12px);
@@ -245,18 +273,23 @@ body {
         .code {
         font-size: 17px;
         }
-        
-        .title1,
-        .code1 {
-        font-size: 23px;
-        }
 
-    }
-    @media screen and (max-width: 600px) {
+
+    /* Breakpoint 2 */
+    @media screen and (max-width: 680px) {
         .bigbox {
             width: calc(100% - 12px);
-            margin-right: -4px;
-            margin-left: -4px;
+            
+        }
+
+        .bigbox:nth-of-type(2n-1) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        .bigbox:nth-of-type(2n) {
+            margin-left: 0;
+            margin-right: 0;
         }
 
         .title,
@@ -268,17 +301,14 @@ body {
         .code1 {
         font-size: 20px;
         }
-        
+
+        .botleft, .botright { 
+        font-size: 20px;
+
+
+        }      
 
  
-    }
+    }}
     
     
-    
-    
-
-    
-
-
-
-
