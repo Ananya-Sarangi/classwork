@@ -98,8 +98,6 @@ let generateGallery = () => {
     
 };
 
-        
-
 
 generateGallery();
 
