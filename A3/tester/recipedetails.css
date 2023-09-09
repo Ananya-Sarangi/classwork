@@ -1,0 +1,16 @@
+
+
+/* NOTE: similar recipe cards not displayed properly - can't figure out why */
+/* styling for the cards itself id the same as the cards on the main page - in test.css file*/
+#similarRecipes {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll; /* horizontal scrolling */
+    gap: 30px; 
+    margin: 2%;}
+    
+.cardwrappersugg {
+    border: 1.5px solid #000000;
+ 
+    aspect-ratio: 1/1;
+}

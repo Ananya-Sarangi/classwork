@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Uncut-Sans-Semibold';
+    src:  url('font/Uncut-Sans-Semibold.woff') format('woff2'),
+          url('font/Uncut-Sans-Semibold.woff2') format('woff');
+         
+}
+
+
+body {
+    margin-left: 4%;
+}
+
+p {
+    margin-top: 40px;
+}
+
+#about {
+    font-size: 30px;
+    font-family: "Uncut-Sans-Semibold";
+}
+
+#details {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    padding-right: 60px;
+}
