@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Uncut-Sans-Bold';
+    src:  url('font/Uncut-Sans-Bold.woff2') format('woff2'),
+          url('font/Uncut-Sans-Bold.woff') format('woff');
+         
+}
+@font-face {
+    font-family: 'Uncut-Sans-Semibold';
+    src:  url('font/Uncut-Sans-Semibold.woff') format('woff2'),
+          url('font/Uncut-Sans-Semibold.woff2') format('woff');
+         
+}
 
 
 /* NOTE: similar recipe cards not displayed properly - can't figure out why */
@@ -13,4 +25,63 @@
     border: 1.5px solid #000000;
  
     aspect-ratio: 1/1;
+}
+
+.recipetopwrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.recpageimgwrapper {
+    width: 50%;
+    padding-top: 40px;
+}
+.recpageimgwrapper img {
+    width: 100%;
+}
+
+.recpagetitlewrapper {
+    width: 40%;
+    padding-left: 60px ;
+    padding-top: 10%;
+}
+#maintitle {
+    font-size: 2rem;
+    font-family: "Uncut-Sans-Semibold" ;
+    word-wrap: normal;
+}
+.line {
+    height: 2px;
+    background-color: #000000;
+    width:90%;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-family: "Uncut-Sans-Semibold" ;
+
+}
+
+.ingredientswrapper {
+    padding-left: 24px;
+}
+.instructionswrapper {
+    padding-left: 24px;
+}
+
+.ingredients {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+.instructions {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    white-space: pre-line;
+    padding-right: 80px;
+}
+.simtitle {
+    font-size: 24px;
+    font-family: "Uncut-Sans-Semibold" ;
+    padding-left: 24px;
+
 }

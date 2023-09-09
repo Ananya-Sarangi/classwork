@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
     font-family: 'Uncut-Sans-Medium';
     src:  url('font/Uncut-Sans-Medium.woff2') format('woff2'),
@@ -17,134 +18,8 @@
          
 }
 
-#recipearea {
-    display: grid;
-    grid-template-columns: repeat(3, 32%); /* Three columns with equal width */
-    gap: 2%; /* Adjust the gap between cards */
-    max-width: 100%;
-    margin: 4%;
-}
 
-
-.cardwrapper {
-    display: flex;
-    flex-direction: column;
-    border: 1.5px solid #000000;
-    
-
-    
-    aspect-ratio: 1/1;
-}
-
-.imagewrapper {
-    height: 72%; /* Set a fixed height for the image container */
-    overflow: hidden;
-    position: relative; /* Position for the gradient overlay */
-    border-bottom: 1.5px solid #000000;
-    object-fit: cover;
-   
-
-}
-
-.imagewrapper img {
-    max-width: 100%; /* Ensure the image doesn't overflow the card */
-    height: 140%; /* Make the image take up all of the imagewrapper's height */
-    object-fit: cover;
-
-
-}
-
-.imagewrapper img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-
-.imagewrapper:hover img {
-    transform: scale(1.05); /* Scale the image up by 10% on hover */
-}
-
-.textwrapper {
-    padding: 20px;
-    
-    background-color: #ffffff; /* Add a light background color */
- 
-    height: 40%; /* Set a fixed height for the textwrapper */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.recipetitlewrapper {
-    height: 40%;
-    
-    
-}
-
-#recipetitle {
-    font-size: 1.2rem; /* Increase the font size for the title */
-    overflow: hidden;
-    flex-grow: 1; /* Allow the title to expand within the fixed height */
-    font-family: "Uncut-Sans-Semibold", sans-serif;
-    margin-top: -1px;
-    padding-top: 2px;
-    
-}
-
-
-
-.recipetimewrapper {
-
-    padding-bottom: 16px;
-    height: 25%;
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: center; /* Center items vertically within the container */
-}
-
-.icon-wrapper {
-    margin-right: 10px; /* space between the icon and text */
-    padding-top: 4px;
-}
-
-.clockicon {
-    height: 25px;
-    width: 25px;
-}
-.recipetimewrapper p {
-    margin: 2px 0; 
-}
-
-.recipeurlwrapper {
-    height: 25%;
-    
-}
-
-
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f76f50;
-    color: #000000;
-    text-decoration: none;
-    text-align: center;
-    border: none;
-    font-size: 8;
-    font-family: "Uncut-Sans-Semibold";
-    cursor: pointer;
-    width: 88%;
-    border: 1.5px solid #000000;
-
-}
-
-.button:hover {
-    background-color: #FFB4CE; /* Change color on hover */
-    color: #040404;
-}
-
-/* nav  */
+/* navbar styling  */
 .top-nav {
     margin-top: 12px;
     height: 48px;
@@ -163,19 +38,40 @@
   
   .menu li {
     margin-bottom: 12px;
-    padding: 5px 20px; /* Add padding between list items (top and bottom) and left/right */
+    padding: 5px 20px; 
     font-family: 'Uncut-Sans-Semibold', sans-serif;
   }
   
-  .menu li a {
-    color: #111111;
+
+  .top-nav .menu li:nth-child(2) a {
+    color: #000000;
     text-decoration: none;
     padding: 18px 0px;
+    font-size: 22px;
+    margin-left: -18px;
+    font-family: 'Uncut-Sans-Semibold', sans-serif;
+  }
+  .menu li a {
+    color: #1b1b1b;
+    text-decoration: none;
+    padding: 18px 16px;
+    font-size: 19px;
     font-family: 'Uncut-Sans-Semibold', sans-serif;
   }
 
-  .menu li a:nth-of-type(1) {
-    font-family: 'Uncut-Sans-Bold', sans-serif;
+  .menu li:nth-child(3) a:hover{
+    color: #f76f50;
+    
+  }
+  .menu li:nth-of-type(1) { 
+    margin-left: -36px;  
+  }
+
+
+
+#logo {
+    height: 34px;
+    width: 34px;
   }
 
 
@@ -183,7 +79,8 @@
     margin: 2%;
 }
 
-/* carousel styling */
+
+/* ------ Section 1 ------ */
 .slideshow-container {
     width: 100%;
     position: relative;
@@ -193,7 +90,6 @@
 
   }
   
-  /* Hide the images by default */
   .mySlides {
     display: none;
     object-fit: cover;
@@ -202,33 +98,7 @@
     object-fit: cover;
     max-width: 100%;
   }
-  
-  
-  
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    margin-bottom: 60px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  
+   
   
   /* The dots/bullets/indicators */
   .dot {
@@ -287,7 +157,7 @@
     to {opacity: 1}
   }
   
-    /* Search bar styling */
+/* -----Search bar styling------*/
     .search-bar {
       position: absolute;
       top: 50%;
@@ -325,8 +195,8 @@
 
 
 
-
-/* svg styling */
+/* ----------Section 2------------ */
+/* Map svg styling */
 
 #allSvg {
     fill:"red";
@@ -334,7 +204,7 @@
 
 #bycuisine {
     padding-left: 90px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: "Uncut-Sans-Semibold";
     margin-top: -30px;
     margin-bottom: 40px;
@@ -342,7 +212,7 @@
 
 
 #byCalories {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: "Uncut-Sans-Semibold";
     margin-top: -24px;
     margin-bottom: 40px;
@@ -403,9 +273,6 @@
 }
 
 
-#slidercont {
-    padding-left: 60px;
-}
 
 #justtesting {
     height: 100px;
@@ -415,8 +282,12 @@
 
 
 /* slider styling */
+#slidercont {
+    padding-left: 60px;
+}
 
 /* Style the range input */
+
 #maxCaloriesSlider {
     -webkit-appearance: none;
     appearance: none;
@@ -433,9 +304,9 @@
 #maxCaloriesSlider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 70px; /* Set the width of the slider thumb */
-    height: 70px; /* Set the height of the slider thumb */
-    background-image: url('images/Sliderthumb.png'); /* Replace 'path/to/your-image.png' with the path to your PNG image */
+    width: 60px; /* Set the width of the slider thumb */
+    height: 60px; /* Set the height of the slider thumb */
+    background-image: url('images/donut.png'); /* Replace 'path/to/your-image.png' with the path to your PNG image */
     background-size: cover; /* Adjust the size to fit the thumb */
     cursor: pointer;
 }
@@ -459,6 +330,126 @@
 }
 
 
+#recipearea {
+    display: grid;
+    grid-template-columns: repeat(3, 32%); /* Three columns with equal width */
+    gap: 2%; /* Adjust the gap between cards */
+    max-width: 100%;
+    margin: 4%;
+}
+
+
+/* Recipe cards styling */
+.cardwrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid #000000;   
+    aspect-ratio: 1/1;
+}
+
+.imagewrapper {
+    height: 72%; 
+    overflow: hidden;
+    position: relative; 
+    border-bottom: 1.5px solid #000000;
+    object-fit: cover;
+   
+
+}
+
+.imagewrapper img {
+    max-width: 100%; 
+    height: 140%; 
+    object-fit: cover;
+
+
+}
+
+.imagewrapper img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+.imagewrapper:hover img {
+    transform: scale(1.05); 
+}
+
+.textwrapper {
+    padding: 20px;   
+    background-color: #ffffff; 
+    height: 40%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.recipetitlewrapper {
+    height: 40%;
+    
+    
+}
+
+#recipetitle {
+    font-size: 1.2rem; /* Increase the font size for the title */
+    overflow: hidden;
+    flex-grow: 1; /* Allow the title to expand within the fixed height */
+    font-family: "Uncut-Sans-Semibold", sans-serif;
+    margin-top: -1px;
+    padding-top: 2px;
+    
+}
+
+/* ----Section 3--------- */
+/* ----Recipe cards styling - dynamic-------- */
+.recipetimewrapper {
+
+    padding-bottom: 16px;
+    height: 25%;
+    display: flex; 
+    align-items: center; 
+}
+
+.icon-wrapper {
+    margin-right: 10px; /* space between the icon and text */
+    padding-top: 4px;
+}
+
+.clockicon {
+    height: 25px;
+    width: 25px;
+}
+.recipetimewrapper p {
+    margin: 2px 0; 
+}
+
+.recipeurlwrapper {
+    height: 25%;
+    
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f76f50;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-size: 8;
+    font-family: "Uncut-Sans-Semibold";
+    cursor: pointer;
+    width: 88%;
+    border: 1.5px solid #000000;
+
+}
+
+.button:hover {
+    background-color: #FFB4CE; /* Change color on hover */
+    color: #040404;
+}
 
 
 
@@ -472,7 +463,9 @@
 
 
 
-@media screen and (max-width: 1200px) {
+/* Responsive - breakpoints */
+
+@media screen and (max-width: 900px) {
     #recipearea {
         display:grid;
         grid-template-columns: repeat(2, 49%); /* Three columns with equal width */
@@ -483,7 +476,7 @@
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
     #recipearea {
         display:grid;
         grid-template-columns: repeat(1, 98%); /* Three columns with equal width */
@@ -493,6 +486,13 @@
     }
     #search {
         font-size: 24px;
+    }
+    #interactivediv {
+        display: flex;
+        flex-direction: column;
+    }
+    #svgContainer {
+        width: 100%;
     }
     
 }

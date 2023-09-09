@@ -1,4 +1,4 @@
-// Function to extract and display recipe details
+
 // Function to extract and display recipe details
 async function extractRecipeDetails() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -21,19 +21,25 @@ async function extractRecipeDetails() {
         // Create HTML to display the recipe details dynamically
         const recipeDetailsHTML = `
             <div id="chosenrecipe">
-                <h2>${title}</h2>
+            <div class="recipetopwrapper">
                 <div class="recpageimgwrapper">
                     <img class="recimg" src="${imageUrl}" alt="${title}" style="max-width: 100%;">
                 </div>
+                <div class="recpagetitlewrapper">
+                <p id="maintitle">${title}</p>
+                <div class="line"></div>
+                </div>
+            </div> 
                 <div class="ingredientswrapper">
-                    <p>Ingredients</p>
-                    <ul>
+                    <p class="subtitle">Ingredients</p>
+                    <ul class="ingredients">
                         ${ingredientsList.map(ingredient => `<li>${ingredient}</li>`).join('')}
                     </ul>
                 </div>
+                <br>
                 <div class="instructionswrapper">
-                    <p>Instructions</p>
-                    <p>${instructions}</p>
+                    <p class="subtitle">Instructions</p>
+                    <p class="instructions">${instructions}</p>
                 </div>
             </div>
         `;
@@ -52,10 +58,10 @@ async function extractRecipeDetails() {
 // Call the function when the page loads
 window.onload = extractRecipeDetails;
 
-// Rest of your code for displaying similar recipes remains the same
 
 
-// this is the code to get similar recipes in the carousel
+
+// similar recipes in the carousel
 async function displaySimilarRecipes(recipeId) {
     try {
         const apiKey = '075b51dbcd4d4419836f94c406a94c50'; // Replace with your Spoonacular API key
@@ -69,7 +75,6 @@ async function displaySimilarRecipes(recipeId) {
 
         // Create HTML to display the list of similar recipes
         const similarRecipesHTML = data.map(recipe => {
-            // Use the correct property name to access the image URL
             const imageUrl = `https://spoonacular.com/recipeImages/${recipe.id}-480x360.${recipe.imageType}`;
             
             return `
@@ -98,10 +103,10 @@ async function displaySimilarRecipes(recipeId) {
             `;
         }).join('');
 
-        // Log the generated HTML to inspect the structure
+        // Log generated HTML to inspect the structure
         console.log('Generated Similar Recipes HTML:', similarRecipesHTML);
 
-        // Display the similar recipes in the "similarRecipes" div
+        // Display similar recipes in the "similarRecipes" div
         document.getElementById('similarRecipes').innerHTML = similarRecipesHTML;
     } catch (error) {
         console.error(error);
